@@ -1,0 +1,103 @@
+/*
+  MOVILE
+*/
+
+.circle {
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  background-color: hsl(180, 29%, 50%);
+  border-radius: 100%;
+  height:5px;
+  width:5px;
+}
+
+.image {
+  position: absolute;
+  top: -30px;
+}
+
+.image img {
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  width:70px;
+}
+
+.description {
+  margin-top: 40px;
+}
+
+.description h1 {
+  color:hsl(180, 8%, 52%);
+  display: inline-block;
+  font-size: 15px;
+  font-weight:700;
+  margin-right: 30px;
+}
+
+.description .badge-new, .badge-featured {
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  background-color:hsl(180, 14%, 20%);
+  border-radius: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight:700;
+  margin-right: 10px;
+  padding:6px;
+}
+
+.description .badge-new {
+  background-color: hsl(180, 29%, 50%);
+  margin-right: 10px;
+}
+
+.description .badge-featured {
+  background-color: hsl(180, 14%, 20%);
+}
+
+.description h2{
+  color:hsl(180, 14%, 20%);
+  font-size: 20px;
+  font-weight:700;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+
+.description p, span {
+  color:hsl(180, 8%, 52%);
+  display: inline-block;
+  font-size: 15px;
+  font-weight:500;
+  margin: 5px 5px 5px 0px;
+}
+
+
+/*  DESKTOP */
+
+@media (min-width: 1440px) {
+
+  .detail {
+    align-items:center;
+    display:flex;
+    justify-content: flex-start;
+  }
+
+  .image {
+    margin-right: 20px;
+    position: static;
+    width:10%;
+  }
+
+  .description {
+    margin: 0px;
+    width:90%;
+  }
+
+}

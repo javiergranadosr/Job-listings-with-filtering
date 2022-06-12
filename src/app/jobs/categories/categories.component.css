@@ -1,0 +1,24 @@
+div {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.card-filter {
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: hsl(180, 31%, 95%);
+  border-radius: 5px;
+  color: hsl(180, 8%, 52%);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 3px 0px 3px 3px;
+  padding: 10px;
+  transition: all 0.5;
+}
+
+.card-filter:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: #fff;
+}

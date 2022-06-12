@@ -1,0 +1,70 @@
+.separator {
+  width: 100%;
+  background-color:hsl(180, 14%, 20%);
+  height:1px;
+}
+
+.card {
+  -moz-border-radius: 5px;
+  -moz-transition: all 0.5;
+  -ms-border-radius: 5px;
+  -ms-transition: all 0.5;
+  -o-border-radius: 5px;
+  -o-transition: all 0.5;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0px 11px 50px -27px hsl(180, 14%, 20%);
+  -webkit-transition: all 0.5;
+  background-color:#FFFF;
+  border-radius: 5px;
+  box-shadow: 0px 11px 50px -27px hsl(180, 14%, 20%);
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin-top: 80px;
+  padding: 10px;
+  position: relative;
+  transition: all 0.5;
+  width: 100%;
+}
+
+.card:hover {
+  border-left: 5px solid hsl(180, 29%, 50%);
+  cursor: pointer;
+}
+
+
+.detail {
+  padding: 10px;
+  width:100%;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px;
+  width:100%;
+}
+
+/* DESKTOP */
+
+@media (min-width: 1440px) {
+
+  .separator {
+    display: none;
+  }
+
+  .card {
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+  }
+
+  .detail {
+    margin-right: 50px;
+    width:60%;
+  }
+
+  .categories {
+    width:40%;
+  }
+}
