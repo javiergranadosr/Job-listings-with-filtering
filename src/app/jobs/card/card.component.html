@@ -1,16 +1,13 @@
-<div class="card">
+<div class="card" *ngFor="let job of dataJobs; let i = index">
   <div class="detail">
-    <app-detail></app-detail>
+    <app-detail [job]="job"></app-detail>
   </div>
   <div class="separator"></div>
   <div class="categories">
-    <app-categories></app-categories>
-    <app-categories></app-categories>
-    <app-categories></app-categories>
-    <app-categories></app-categories>
-    <app-categories></app-categories>
-    <app-categories></app-categories>
-    <app-categories></app-categories>
-    <app-categories></app-categories>
+    <app-categories
+      [languajes]="job.languages"
+      [tools]="job.tools"
+      (eventFilters)="getFilters($event)"
+    ></app-categories>
   </div>
 </div>

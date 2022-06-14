@@ -1,14 +1,14 @@
 <div class="detail">
   <div class="image">
-    <img src="./assets/insure.svg" alt="" />
+    <img [src]="job.logo" [alt]="job.company" />
   </div>
   <div class="description">
-    <h1>Photosnap</h1>
-    <span class="badge-new">NEW!</span
-    ><span class="badge-featured">FEATURED</span>
-    <h2>Senior Frontend Developer</h2>
-    <p>1d ago</p>
-    <span class="circle"></span> <span>Full Time</span>
-    <span class="circle"></span> <span>USA only</span>
+    <h1>{{ job.company | titlecase }}</h1>
+    <span class="badge-new" *ngIf="job.new">NEW!</span
+    ><span class="badge-featured" *ngIf="job.featured">FEATURED</span>
+    <h2>{{ job.position | titlecase }}</h2>
+    <p>{{ job.postedAt }}</p>
+    <span class="circle"></span> <span> {{ job.contract | titlecase }} </span>
+    <span class="circle"></span> <span> {{ job.location | titlecase }} </span>
   </div>
 </div>

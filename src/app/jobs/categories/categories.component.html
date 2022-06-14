@@ -1,3 +1,9 @@
 <div>
-  <span class="card-filter">Frontend</span>
+  <span
+    class="card-filter"
+    *ngFor="let category of categories"
+    (click)="addFilter(category)"
+  >
+    {{ category | uppercase }}
+  </span>
 </div>

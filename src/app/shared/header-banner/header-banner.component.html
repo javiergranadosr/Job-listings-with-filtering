@@ -1,8 +1,12 @@
 <header>
   <div class="filters">
-    <app-card-filter></app-card-filter>
-    <div class="clear" >
-        <span>Clear</span>
+    <app-card-filter
+      *ngFor="let filter of filters"
+      [title]="filter"
+      (removeFilter)="getRemove(filter)"
+    ></app-card-filter>
+    <div class="clear">
+      <span (click)="clearFilter()">Clear</span>
     </div>
   </div>
 </header>

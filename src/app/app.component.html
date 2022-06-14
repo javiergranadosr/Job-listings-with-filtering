@@ -1,4 +1,9 @@
-<app-header-banner></app-header-banner>
+<app-header-banner
+  [filters]="filters"
+  (sendRemove)="getSendRemove($event)"
+></app-header-banner>
 <div class="container">
-  <app-card></app-card>
+  <app-card
+    (sendFilters)="getFilters($event)"
+  ></app-card>
 </div>
